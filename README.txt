@@ -1,3 +1,8 @@
+Version 0.8.1 - Feb 26,2023
+Patchlog
+Updated Folders and Assets
+Updated Coffee Prefabs with Animations
+==========================================================================
 Version 0.8 - Feb 21,2023
 Patchlog
 Fresh batch of assets

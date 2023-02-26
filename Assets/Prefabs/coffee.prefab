@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7293975651637420440}
   - component: {fileID: 2869794145893389324}
   - component: {fileID: 7836555158060502722}
+  - component: {fileID: 4926864961793922866}
   m_Layer: 0
   m_Name: coffee
   m_TagString: coffee
@@ -122,3 +123,23 @@ PolygonCollider2D:
       - {x: 0.59, y: -0.78999996}
       - {x: 0.66999996, y: 0.17999999}
       - {x: 0.66999996, y: 0.68}
+--- !u!95 &4926864961793922866
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3092070213137344210}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 853cf57c932360941badb9d2319f992b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
