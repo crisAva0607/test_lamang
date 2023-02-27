@@ -38,4 +38,5 @@ public class ScenesManager : MonoBehaviour
     {
         SceneManager.LoadScene(Scene.MainMenu.ToString());
     }
+
 }

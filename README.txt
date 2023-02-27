@@ -1,3 +1,8 @@
+Version 0.8.2 - Feb 27,2023
+Patchlog
+Added Jeep Code
+Updated Main Menu
+==========================================================================
 Version 0.8.1 - Feb 26,2023
 Patchlog
 Updated Folders and Assets
