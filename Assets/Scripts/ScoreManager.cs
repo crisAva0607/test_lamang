@@ -5,19 +5,24 @@ using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
-    public TMP_Text textScore;
-    public float score;
+    public static ScoreManager instance;
+    public TextMeshProUGUI text;
+    int score;
 
     // Start is called before the first frame update
     void Start()
     {
-        score = 0f;
-        textScore.text = score.ToString() + " COINS";
+        if(instance == null)
+        {
+            instance = this;
+        }
     }
 
     // Update is called once per frame
-    void Update()
+    public void ChangeScore(int coinValue)
     {
-        textScore.text = score.ToString() + " COINS";
+        score += coinValue;
+
+        text.text = "X" + score.ToString();
     }
 }
