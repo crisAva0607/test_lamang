@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\UI\UIGameMenu.cs" />
+    <Compile Include="Assets\Scripts\Jeepney.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
     <Compile Include="Assets\Scripts\ScoreManager.cs" />
     <Compile Include="Assets\Scripts\Managers\ScenesManager.cs" />
@@ -64,7 +65,9 @@
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\UI\UIMainMenu.cs" />
     <Compile Include="Assets\Scripts\UI\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\JeepneyControl.cs" />
     <Compile Include="Assets\Scripts\MoveBackground.cs" />
+    <Compile Include="Assets\Scripts\Coin.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

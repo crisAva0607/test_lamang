@@ -15,6 +15,5 @@ public class UIMainMenu : MonoBehaviour
     private void StartNewGame()
     {
         ScenesManager.Instance.LoadNewGame();
-        Time.timeScale = 1; // Unpauses the game
     }
 }
