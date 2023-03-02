@@ -15,7 +15,7 @@ public class PowerUpController : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
-            //scoreManager.score += 1f;
+            scoreManager.score += 1f;
             Destroy(gameObject);
         }
          

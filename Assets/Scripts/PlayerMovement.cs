@@ -130,8 +130,6 @@ public class PlayerMovement : MonoBehaviour
             Destroy(other.gameObject);
         }
 
-        
-
     }
 
     void OnCollisionEnter2D(Collision2D collision)
