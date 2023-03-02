@@ -16,7 +16,8 @@ public class ScenesManager : MonoBehaviour
     public enum Scene
     {
         MainMenu,
-        World1Level1
+        World1Level1,
+        World2Level1
     }
 
     public void LoadScene (Scene scene)
@@ -32,6 +33,7 @@ public class ScenesManager : MonoBehaviour
     public void LoadNextScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        Time.timeScale = 1; // Unpauses the game
     }
 
     public void LoadMainMenu()
