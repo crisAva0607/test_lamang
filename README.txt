@@ -1,11 +1,3 @@
-Version 0.8.3 - Mar 02,2023
-Patchlog
-Updated Main Menu
-Added Pause Menu
-Added Player Prefabs
-Restarting and Going to Next Levels dont freeze anymore
-Added World2Level1 Scene
-==========================================================================
 Version 0.8.2 - Feb 27,2023
 Patchlog
 Added Jeep Code
