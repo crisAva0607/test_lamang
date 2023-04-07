@@ -6,9 +6,11 @@ TagManager:
   tags:
   - Platform
   - Win
-  - coffee
   - coin
   - Jeep
+  - booster
+  - obstacle
+  - immunity
   layers:
   - Default
   - TransparentFX

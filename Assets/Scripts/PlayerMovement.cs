@@ -26,7 +26,10 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D vehicleRigidbody;
     private bool isRiding = false;
     public Transform exitPoint;
-  
+
+    private IEnumerator coroutine;
+    private Renderer rend;
+    private Color c;
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +43,9 @@ public class PlayerMovement : MonoBehaviour
 
         boostTimer = 0;
         boosting = false;
+
+        rend = gameObject.GetComponent<Renderer>();
+        c = rend.material.color;
     }
 
     // Update is called once per frame
@@ -122,7 +128,7 @@ public class PlayerMovement : MonoBehaviour
             Time.timeScale = 0; //Para magpause lahat sa game
         }
 
-        if (other.gameObject.tag == "coffee")
+        if (other.gameObject.tag == "booster")
         {
             //Debug.Log("working");
             boosting = true;
@@ -130,7 +136,27 @@ public class PlayerMovement : MonoBehaviour
             Destroy(other.gameObject);
         }
 
-        
+        if(other.gameObject.tag == "immunity")
+        {
+            coroutine = Invulnerable();
+            StartCoroutine(coroutine);
+            Destroy(other.gameObject);
+        }
+
+        IEnumerator Invulnerable()
+        {
+            
+            Physics2D.IgnoreLayerCollision(10, 11, true);
+            c.a = 0.5f;
+            rend.material.color = c;
+            yield return new WaitForSeconds(3f);
+            Physics2D.IgnoreLayerCollision(10, 11, false);
+            c.a = 1f;
+            rend.material.color = c;
+
+        }
+
+
 
     }
 
@@ -155,7 +181,6 @@ public class PlayerMovement : MonoBehaviour
             isJumping = true;
         }
 
- 
 
     }
 
