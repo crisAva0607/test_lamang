@@ -146,11 +146,11 @@ public class PlayerMovement : MonoBehaviour
         IEnumerator Invulnerable()
         {
             
-            Physics2D.IgnoreLayerCollision(10, 11, true);
+            Physics2D.IgnoreLayerCollision(6, 7, true);
             c.a = 0.5f;
             rend.material.color = c;
             yield return new WaitForSeconds(3f);
-            Physics2D.IgnoreLayerCollision(10, 11, false);
+            Physics2D.IgnoreLayerCollision(6, 7, false);
             c.a = 1f;
             rend.material.color = c;
 
